@@ -1,7 +1,8 @@
+import * as core from '@actions/core';
 const core = require('@actions/core');
 
 try {
-    const nombre = core.getInput('name');
+    const nombre = core.getInput('nombre');
     const tiempo = (new Date()).toLocaleTimeString();
 } catch {
     core.setFailed(error.message);
