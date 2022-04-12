@@ -1,0 +1,12 @@
+name: 'Node Action'
+description: 'Giving a name, obtain the time untill it appears'
+inputs:
+  name:
+    description: 'Introduce a name'
+    required: true
+outputs:
+  time:
+    description: 'Time since the input was writed'
+runs:
+  usin: 'node12'
+  main: 'index.js'
