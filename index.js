@@ -1,9 +1,8 @@
-//import * as core from '@actions/core';
-import { getInput, setFailed } from '@actions/core';
+const core = require('@actions/core');
 
 try {
-    const nombre = getInput('nombre');
+    const nombre = core.getInput('nombre');
     const tiempo = (new Date()).toLocaleTimeString();
 } catch {
-    setFailed(error.message);
+    core.setFailed(error.message);
 }
