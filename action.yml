@@ -8,5 +8,5 @@ outputs:
   time:
     description: 'Time since the input was writed'
 runs:
-  usin: 'node12'
+  using: 'node12'
   main: 'index.js'
